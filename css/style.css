@@ -1,0 +1,71 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'poppins',sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+.wrapper{
+    background: #fff;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0, 0,0, 0.1),
+    0 32px 64px -48px rgba(0,0,0, 0.5);
+}
+.profile{
+    height: 50px;
+    width: 50px;
+}
+.logout{
+    height: 40px;
+}
+.userlist{
+    max-height:400px;
+    
+}
+.userlist::-webkit-scrollbar{
+    width: 0px;
+}
+.userlist p{
+   color: grey;
+   font-size: smaller;
+}
+.chat-img{
+    width: 30px;
+    height: 30px;
+}
+.incoming .details{
+    border-radius: 15px;
+    border-top-left-radius:0px;
+    max-width: 75%;
+    box-shadow: 0 0 128px 0 rgba(47, 35, 35, 0.1),
+    0 32px 64px 480px rgba(86, 6, 6, 0.5);
+
+}
+.outgoing .details{
+    max-width: 75%;
+    border-radius:15px;
+    border-bottom-right-radius:0px;
+}
+.chat{
+    height: 400px;
+}
+.chat::-webkit-scrollbar{
+    width: 0px;
+}
+.messagebutton{
+    height: 75%;
+}
+.password_position{
+    right: 10px;
+    top: 45px;
+    cursor: pointer;
+    color: grey;
+}
