@@ -27,7 +27,7 @@
             <header class="h1">
                 Sign up
             </header>
-            <form action="#" method="post" id="Form">
+            <form action="#" method="post" id="Form" enctype="multipart/form-data">
                 <div class="error-text bg-warning text-danger text-center p-2 mb-2 rounded-1">incorrect credentials!</div>
                    <div class="d-flex">
                        <div class="field">

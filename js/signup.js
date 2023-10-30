@@ -7,7 +7,7 @@ form.addEventListener('submit',(e)=>{
         if (xml.readyState === XMLHttpRequest.DONE) {
             if (xml.status === 200) {
                 let data = xml.response;
-                console.log("the data",data);
+                console.log(data);
             }
         }
     }
