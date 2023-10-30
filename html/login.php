@@ -27,7 +27,7 @@
             <header class="h1">
                 Login
             </header>
-            <form action="" method="post" class="">
+            <form action="" method="post" id="myform">
                 <div class="error-text bg-warning text-danger text-center p-2 mb-2 rounded-1">incorrect credantials!</div>
                     <div class="field">
                         <label for="email" class="form-label">Email</label>
@@ -47,5 +47,6 @@
     </div>
     <script src="../js/showphidep.js"></script>
     <script src="../js/loginerror.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>
