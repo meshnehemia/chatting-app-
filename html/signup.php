@@ -18,6 +18,7 @@
     <title>Sign up </title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/loading.css">
     <script src="../js/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -51,6 +52,9 @@
                      <div class="field mt-1">
                         <label for="profile" class="form-label">select image</label>
                         <input type="file" name="image" id="profile" placeholder="choose your image" class="form-control">
+                    </div>
+                    <div class="loading">
+                        <div class="loading_panel"></div>
                     </div>
                     <div class="field">
                         <input type="submit" value="click to continue" class="btn btn-success my-3 w-100 sbn" id="#submit">

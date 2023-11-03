@@ -1,11 +1,11 @@
 <?php
-    try {
-        $conn =mysqli_connect("localhost","root","","chat");
-        if($conn){
+    global $conn;
+    require_once('config.php');
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $password =mysqli_real_escape_string($conn,$_POST['password']);
 
-        }else{
-            die();
-        }
-    }catch (Exception $e){
-       die();
-    }
+    echo "connected "
+
+
+
+?>
