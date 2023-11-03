@@ -12,7 +12,16 @@ form.addEventListener('submit',(e)=>{
             loading.classList.remove('loading');
             if(xml.status === 200){
                 let data =xml.response;
-                message.innerHTML =data;
+                if(data =="successfully"){
+                    message.classList.remove('bg-warning');
+                    message.classList.add('success');
+                    message.innerHTML="you have logged in " + data;
+                    setTimeout(function() {location.href = "../html/chats.php"; }, 2000);
+                }else{
+                    message.classList.add('bg-warning');
+                    message.classList.remove('success');
+                    message.innerHTML =data;
+                }
             }
         }
     }
