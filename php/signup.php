@@ -27,7 +27,7 @@
                     $upload_image = '../images/'.$time.$image_name;
                     move_uploaded_file($image['tmp_name'],$upload_image);
                     $status = "active now";
-                    $sql = `CREATE TABLE IF NOT EXISTS profiles(
+                    $sql = 'CREATE TABLE IF NOT EXISTS profiles(
                                 id INT AUTO_INCREMENT,
                                 fname VARCHAR(15),
                                 lname VARCHAR(15),
@@ -36,7 +36,7 @@
                                 image VARCHAR(60),
                                 status varchar(20),
                                 PRIMARY KEY (id)
-                                );`;
+                                );';
                                 mysqli_query($conn,$sql);
                 $sql ="INSERT INTO profiles(fname,lname,password,email,image,status) VALUES ('{$fname}','{$lname}','{$password}','{$email}','{$upload_image}','{$status}');";
                     mysqli_query($conn,$sql);
