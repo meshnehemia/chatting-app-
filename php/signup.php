@@ -37,6 +37,7 @@
                                 status varchar(20),
                                 PRIMARY KEY (id)
                                 );`;
+                                mysqli_query($conn,$sql);
                 $sql ="INSERT INTO profiles(fname,lname,password,email,image,status) VALUES ('{$fname}','{$lname}','{$password}','{$email}','{$upload_image}','{$status}');";
                     mysqli_query($conn,$sql);
                 $sql2 = mysqli_query($conn,"SELECT * from profiles where email ='{$email}'");

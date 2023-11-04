@@ -4,7 +4,7 @@
     $output_users ="";
     if(mysqli_num_rows($sql)>0){
         while($row=mysqli_fetch_assoc($sql)){
-                $output_users .='<a href="#" class="text-decoration-none text-dark d-flex justify-content-between border-top mt-2 pt-2">
+                $output_users .='<a href="../html/chatting.php?user='.$row['id'].'" class="text-decoration-none text-dark d-flex justify-content-between border-top mt-2 pt-2">
                 <div class="content d-flex">
                      <img src="'.$row['image'].'" class="rounded-circle profile" alt="">
                      <div class="details mx-2">
